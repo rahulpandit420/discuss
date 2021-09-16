@@ -13,16 +13,16 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         if(password_verify($pass, $row['user_pass'])){
             session_start();
             $_SESSION['loggedin'] = true;
-           // $_SESSION['sno'] = $row['sno'];
-            $_SESSION['useremail'] = $email;
-            echo "logged in". $email;
+           $_SESSION['sno'] = $row['sno'];
+            $_SESSION['username'] = $email;
+            echo "loggedin". $email;
         } 
-        else{
-            echo "unable to login";
-        }
-        //header("Location: /forums/index.php");  
+        header("Location: /forums/index.php");  
     }
-    //header("Location: /forums/index.php");  
+    else{
+       echo "unable to login";
+   }
+header("Location: /forums/index.php");  
 }
 
 ?>

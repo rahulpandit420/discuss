@@ -1,5 +1,5 @@
 <!-- Modal -->
-<div class="modal fade" id="signupmodal" tabindex="-1" role="dialog" aria-labelledby="signupModalLabel"
+<div class="modal fade" id="signupmodal" tabindex="-1" role="dialog" aria-labelledby="signupmodalLabel"
     aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
@@ -12,12 +12,12 @@
             <form action="/forums/partials/_handleSignup.php" method="post">
                 <div class="modal-body">
                     <div class="form-group">
-                        <label for="exampleInputEmail1">Email address</label>
+                        <label for="exampleInputEmail1">username</label>
                         <!-- <input type="email" class="form-control" id="signupEmail" name="signupEmail" aria-describedby="emailHelp"> -->
                         <input type="text" class="form-control" id="signupEmail" name="signupEmail"
                             aria-describedby="emailHelp">
-                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
-                            else.</small>
+                        <!--<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                            else.</small>-->
                     </div>
                     <div class="form-group">
                         <label for="exampleInputPassword1">Password</label>

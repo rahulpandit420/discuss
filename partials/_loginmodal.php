@@ -12,11 +12,12 @@
             <form action="/forums/partials/_handlelogin.php" method="post">
                 <div class="modal-body">
                     <div class="form-group">
-                        <label for="loginEmail">Email address</label>
+                        <label for="loginEmail">username</label>
                         <input type="text" class="form-control" id="loginEmail" name="loginEmail"
                             aria-describedby="emailHelp">
-                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
-                            else.</small>
+                        
+                        <!--    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                            else.</small>-->
                     </div>
                     <div class="form-group">
                         <label for="loginPass">Password</label>
